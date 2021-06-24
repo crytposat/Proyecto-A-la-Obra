@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Paleta https://colorhunt.co/palette/281987
+cc9b6d
+f1ca89
+f2dac3
+c8c2bc */
+
+/* Cargo la Fuente local */
+@font-face {
+    font-family: "rubik";
+    src: url(../Fuente/Rubik/static/Rubik-Bold.ttf) format(woff);
+}
+
+.containerEncabezado{
+    display: flex;
+    justify-content: space-around;
+    /* width: 900px; */
+    background-color: #cc9b6d;
+    align-items: center;
+}
+
+/* Le aplico un color al elemnto h1 */
+h1{
+    color: #ddcdbe;    font-weight: bold;
+    font-family: "rubik";
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: overline underline;
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+.logo{
+    width: 160px;
+    height: 96px;
+}
+.dropdown{
+    list-style: none;
+    transition: all 1s;
+}
+.Menu1{
+    list-style: none;
+}
+.dropdownMenu{
+    list-style: none;
+    display: none;
+}
+.dropdown:hover .dropdownMenu{
+    display: block;
+}
+.linkEncabezado:hover{
+    color: white;
+    background-color: #cc9b6d;
+    list-style: none;
+
+}
+.linkSubEncabezado{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    background-color: antiquewhite;
+    list-style: none;
+}
+
+.about-us-container{
+    font-family: "rubik";
+    padding: 1em;
+    background-color: #f1ca89;
+    text-align: center;
+}
+
+/* Logos de las redes sociales */
+.social-network-logo{
+    width: 24px;
+    height: 24px;
+}
+
+/* formato del párrafo descrición */
+.descripcion{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    background-image: url(../Images/Fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Grilla con las categorias de contratistas */
+.tipo-contratista{
+    background-color: #f2dac3;
+    color: rgb(44, 9, 173);
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.link{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    background-color: #f2dac3;
+    display: flex;
+    align-items: center;
+}
+
+.link:hover{
+    color: white;
+    background-color: #cc9b6d;
+}
+
+.subtitulo{
+    text-decoration: rgb(221, 221, 6);
+    text-shadow: yellowgreen;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.parrafo{
+    font-family: "rubik";
+    text-align: left;
+}
+
+#mapa{
+    width: 400px;
+    height: 200px;
+}
+
+.subtituloIntermedio{
+    text-decoration: rgb(221, 221, 6);
+    text-shadow: yellowgreen;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.parrafoIntermedio{
+    font-family: "rubik";
+    text-align: right;
+}
+
+.footer{
+    background-color: #c8c2bc;
+}
+
+.Estilo1{
+    background-color: #f1ca89;
+}
+
+.Estilo2{
+    background-color: #f2dac3;
+}
+
+.lista1{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "albanil . carpintero . cerrajero . electricista" ". gasista . pintor . plomero .";
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    grid-row-gap: 30px;
+}
+
+.a1{
+    grid-area: albanil;
+}
+.a2{
+    grid-area: carpintero;
+}
+.a3{
+    grid-area: cerrajero;
+}
+.a4{
+    grid-area: electricista;
+}
+.a5{
+    grid-area: gasista;
+}
+.a6{
+    grid-area: pintor;
+}
+.a7{
+    grid-area: plomero;
+}
+
+.contratista{
+    width: 5em;
+    border-radius: 25%;
+}
+
+/* Grid Matriz de datos de contratistas */
+.matrizContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 10px;
+    font-style: "rubik";
+    font-weight: bolder;
+    justify-self: center;
+}
+.celda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-container{
+    transition: all 1s;
+}
+
+.link-container:hover{
+    transform: scale(1.5);
+}
+
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {    
+    body{
+        background-color: #f1ca89;
+        width: auto;
+    }
+    .matrizContainer{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: large;
+    }
+    .logo{
+        width: 96px;
+        height: 60px;
+    }
+    .lista1{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: "albanil . carpintero . cerrajero" ". electricista . gasista ." "pintor . plomero . .";
+        grid-row-gap: 10px;
+    }
+    
+}
+
+/* Celular */
+@media only screen and (max-width: 640px) {
+    body{
+        background-color: #cc9b6d;
+        width: auto;
+    }
+    h1{
+        font-size: small;
+    }
+    .logo{
+        width: 60px;
+        height: 40px;
+    }
+    .matrizContainer{
+        grid-template-columns: 1fr;
+    }
+    .lista1{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "albanil . carpintero" ". cerrajero ." "electricista . gasista" ". pintor ." "plomero . .";
+        grid-row-gap: 10px;
+    }
+}
