@@ -1,0 +1,11 @@
+@mixin fuente-normal($peso) {
+    @if fuente-normal($peso) == bold{
+        text-decoration: underline;
+    }@else{
+        text-decoration: none;
+    }
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: $peso;
+    text-align: center;
+}

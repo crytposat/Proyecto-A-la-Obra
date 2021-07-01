@@ -1,0 +1,7 @@
+@import "../base/extends";
+@import "../base/mixin";
+
+.link{
+    @extend %display-flex;
+    @include fuente-normal(bold);
+}

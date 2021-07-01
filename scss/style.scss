@@ -1,0 +1,57 @@
+/* Reiniciando */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import "base/logos";
+@import "base/paleta";
+@import "base/maps";
+@import "components/header";
+@import "components/grilla-contratistas";
+@import "components/footer";
+@import "base/extends";
+@import "components/pag-profesionales";
+@import "components/categorias";
+@import "base/mixin";
+
+.lista1{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "albanil . carpintero . cerrajero . electricista" ". gasista . pintor . plomero .";
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    grid-row-gap: 30px;
+}
+.a1{
+    grid-area: albanil;
+}
+.a2{
+    grid-area: carpintero;
+}
+.a3{
+    grid-area: cerrajero;
+}
+.a4{
+    grid-area: electricista;
+}
+.a5{
+    grid-area: gasista;
+}
+.a6{
+    grid-area: pintor;
+}
+.a7{
+    grid-area: plomero;
+}
+
+/* Como funciona */
+.about-us-container{
+    @include fuente-normal(normal);
+    background-color: nth($colores-fondo, 2 );
+    
+}
+
+    
+@import "base/query";

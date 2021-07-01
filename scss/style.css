@@ -1,0 +1,289 @@
+/* Reiniciando */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contratista {
+  width: 5em;
+  border-radius: 25%;
+}
+
+/* Colores del background*/
+@font-face {
+  font-family: "rubik";
+  src: url(../Fuente/Rubik/static/Rubik-Bold.ttf) format(woff);
+}
+
+header nav div .logo {
+  width: 160px;
+  height: 96px;
+}
+
+h1 {
+  color: #ddcdbe;
+  font-weight: bold;
+  font-family: "rubik";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-decoration: overline underline;
+  border: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Colores del background*/
+.descripcion {
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  background-image: url(../Images/Fondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tipo-contratista {
+  background-color: #f2dac3;
+  color: #2c09ad;
+}
+
+.tipo-contratista h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.contratista {
+  width: 5em;
+  border-radius: 25%;
+  text-decoration: none;
+}
+
+.link-container {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.link-container:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+/* Colores del background*/
+footer {
+  background-color: #c8c2bc;
+}
+
+footer a img {
+  width: 24px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matrizContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 16px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  font-style: "rubik";
+  font-weight: bolder;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.subtitulo {
+  -webkit-text-decoration: #dddd06;
+          text-decoration: #dddd06;
+  text-shadow: yellowgreen;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.parrafo {
+  font-family: "rubik";
+  text-align: left;
+}
+
+#mapa {
+  width: 400px;
+  height: 200px;
+}
+
+.subtituloIntermedio {
+  -webkit-text-decoration: #dddd06;
+          text-decoration: #dddd06;
+  text-shadow: yellowgreen;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.parrafoIntermedio {
+  font-family: "rubik";
+  text-align: right;
+}
+
+.Estilo1 {
+  background-color: #f1ca89;
+}
+
+.Estilo2 {
+  background-color: #f2dac3;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lista1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "albanil . carpintero . cerrajero . electricista" ". gasista . pintor . plomero .";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  grid-row-gap: 30px;
+}
+
+.a1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: albanil;
+}
+
+.a2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: carpintero;
+}
+
+.a3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: cerrajero;
+}
+
+.a4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: electricista;
+}
+
+.a5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: gasista;
+}
+
+.a6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: pintor;
+}
+
+.a7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: plomero;
+}
+
+/* Como funciona */
+.about-us-container {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  background-color: #f1ca89;
+}
+
+/* Colores del background*/
+/* Celular */
+@media only screen and (max-width: 640px) {
+  body {
+    background-color: #f2dac3;
+    width: auto;
+  }
+  h1 {
+    font-size: small;
+  }
+  .logo {
+    width: 60px;
+    height: 40px;
+  }
+  .matrizContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .lista1 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "albanil . carpintero" ". cerrajero ." "electricista . gasista" ". pintor ." "plomero . .";
+    grid-row-gap: 10px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body {
+    background-color: #c8c2bc;
+    width: auto;
+  }
+  .matrizContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: large;
+  }
+  .logo {
+    width: 96px;
+    height: 60px;
+  }
+  .lista1 {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "albanil . carpintero . cerrajero" ". electricista . gasista ." "pintor . plomero . .";
+    grid-row-gap: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import "../base/maps";
+@import "../base/paleta";
+
+.descripcion{
+    color: nth($list: $color-fuente , $n: 1);
+    font-size: 16px;
+    font-weight: bolder;
+    background-image: url(../Images/Fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.tipo-contratista{
+    background-color: #f2dac3;
+    color: rgb(44, 9, 173);
+    h5{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+    }
+}
+.contratista{
+    width: 5em;
+    border-radius: 25%;
+    text-decoration: none;
+}
+
+.link-container{
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}

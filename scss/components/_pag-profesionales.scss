@@ -1,0 +1,47 @@
+.matrizContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 10px;
+    font-style: "rubik";
+    font-weight: bolder;
+    justify-self: center;
+}
+
+.subtitulo{
+    text-decoration: rgb(221, 221, 6);
+    text-shadow: yellowgreen;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+}
+.parrafo{
+    font-family: "rubik";
+    text-align: left;
+}
+
+#mapa{
+    width: 400px;
+    height: 200px;
+}
+
+.subtituloIntermedio{
+    text-decoration: rgb(221, 221, 6);
+    text-shadow: yellowgreen;
+    text-transform: uppercase;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.parrafoIntermedio{
+    font-family: "rubik";
+    text-align: right;
+}
+.Estilo1{
+    background-color: #f1ca89;
+}
+
+.Estilo2{
+    background-color: #f2dac3;
+}

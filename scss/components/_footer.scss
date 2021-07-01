@@ -1,0 +1,11 @@
+@import "../base/paleta";
+@import "../base/maps";
+
+footer{
+    background-color: nth($colores-fondo, 4 );
+    a{
+        img{
+            width: map-get($redes, tamano-logo );
+        }
+    }
+}
