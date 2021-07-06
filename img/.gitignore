@@ -1,4 +1,4 @@
-node_modules
-package.json
-package-lock.json
-Wireframe
+/node_modules
+/package.json
+/package-lock.json
+/Wireframe
