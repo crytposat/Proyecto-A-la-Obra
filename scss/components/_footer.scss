@@ -2,10 +2,19 @@
 @import "../base/maps";
 
 footer{
-    background-color: nth($colores-fondo, 4 );
-    a{
-        img{
-            width: map-get($redes, tamano-logo );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: nth($colores-fondo, 5 );
+    padding: 1rem;
+    footer-images{
+        width: 60%;
+        max-height: 90px;
+        justify-content: center;
+        a{
+            img{
+                width: map-get($redes, tamano-logo );
+            }
         }
     }
 }

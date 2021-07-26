@@ -59,9 +59,17 @@ h1 {
 
 /* Colores del background*/
 footer {
-  background-color: #c8c2bc; }
-  footer a img {
-    width: 24px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #242122;
+  padding: 1rem; }
+  footer footer-images {
+    width: 60%;
+    max-height: 90px;
+    justify-content: center; }
+    footer footer-images a img {
+      width: 10vh; }
 
 .link {
   display: flex;
