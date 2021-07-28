@@ -58,9 +58,24 @@ h1 {
     transform: scale(1.5); }
 
 /* Colores del background*/
+<<<<<<< HEAD
 footer, .link {
   display: flex;
   align-items: center; }
+=======
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #242122;
+  padding: 1rem; }
+  footer footer-images {
+    width: 60%;
+    max-height: 90px;
+    justify-content: center; }
+    footer footer-images a img {
+      width: 10vh; }
+>>>>>>> refs/remotes/origin/master
 
 footer {
   flex-direction: row;

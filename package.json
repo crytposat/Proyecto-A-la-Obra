@@ -13,5 +13,13 @@
   "devDependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crytposat/Proyecto-A-la-Obra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crytposat/Proyecto-A-la-Obra/issues"
+  },
+  "homepage": "https://github.com/crytposat/Proyecto-A-la-Obra#readme"
 }
