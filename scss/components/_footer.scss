@@ -9,12 +9,7 @@ footer{
     padding: 1rem;
     footer-images{
         width: 60%;
-        max-height: 90px;
+        max-height: 10px;
         justify-content: center;
-        a{
-            img{
-                width: map-get($redes, tamano-logo );
-            }
-        }
     }
 }
