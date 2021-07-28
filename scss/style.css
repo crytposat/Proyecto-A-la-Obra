@@ -167,9 +167,9 @@ footer a img {
 .lista1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: (1fr)[2];
+  -ms-grid-rows: (1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "albanil . carpintero . cerrajero . electricista" ". gasista . pintor . plomero .";
   justify-items: center;
@@ -251,9 +251,9 @@ footer a img {
         grid-template-columns: 1fr;
   }
   .lista1 {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[4];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "albanil . carpintero" ". cerrajero ." "electricista . gasista" ". pintor ." "plomero . .";
     grid-row-gap: 10px;
@@ -278,9 +278,9 @@ footer a img {
     height: 60px;
   }
   .lista1 {
-    -ms-grid-columns: (1fr)[5];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(5, 1fr);
-    -ms-grid-rows: (1fr)[3];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "albanil . carpintero . cerrajero" ". electricista . gasista ." "pintor . plomero . .";
     grid-row-gap: 10px;
