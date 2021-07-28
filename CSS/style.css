@@ -58,12 +58,23 @@ h1 {
     transform: scale(1.5); }
 
 /* Colores del background*/
-footer {
-  background-color: #c8c2bc; }
-  footer a img {
-    width: 24px; }
+footer, .link {
+  display: flex;
+  align-items: center; }
 
-.link {
+footer {
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #242122;
+  padding: 1rem; }
+  footer footer-images {
+    width: 60%;
+    max-height: 10px; }
+    footer footer-images partners {
+      width: 60%;
+      max-height: 1rem; }
+
+footer, .link {
   display: flex;
   align-items: center; }
 
@@ -109,7 +120,7 @@ footer {
 .Estilo2 {
   background-color: #f2dac3; }
 
-.link {
+footer, .link {
   display: flex;
   align-items: center; }
 

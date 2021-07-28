@@ -1,11 +1,29 @@
 @import "../base/paleta";
 @import "../base/maps";
 
+// footer{
+//     background-color: nth($colores-fondo, 4 );
+//     a{
+//         img{
+//             width: map-get($redes, tamano-logo );
+//         }
+//     }
+// }
+
+@import "../base/extends";
+
 footer{
-    background-color: nth($colores-fondo, 4 );
-    a{
-        img{
-            width: map-get($redes, tamano-logo );
+    @extend %display-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: nth($colores-fondo, 5 );
+    padding: 1rem;
+    footer-images{
+        width: 60%;
+        max-height: 10px;
+        partners{
+            width: 60%;
+            max-height: 1rem;
         }
     }
 }
