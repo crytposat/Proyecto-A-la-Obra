@@ -8,10 +8,12 @@ footer{
     justify-content: space-evenly;
     background-color: nth($colores-fondo, 5 );
     padding: 1rem;
+    margin: 0;
     .footer-images{
+        img{
         width: 60%;
-        max-height: 10px;
-        partners{
+        max-height: 10px;}
+        .partners{
             width: 60%;
             max-height: 1rem;
         }
