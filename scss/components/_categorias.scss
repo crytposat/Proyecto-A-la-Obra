@@ -4,4 +4,5 @@
 .link{
     @extend %display-flex;
     @include fuente-normal(bold);
+    margin: 0;
 }
