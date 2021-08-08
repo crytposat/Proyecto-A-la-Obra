@@ -3,16 +3,20 @@
     margin: 0px;
     padding: 0px;
 }
-@import "base/logos";
-@import "base/paleta";
-@import "base/maps";
-@import "components/header";
-@import "components/grilla-contratistas";
-@import "components/footer";
 @import "base/extends";
-@import "components/pag-profesionales";
-@import "components/categorias";
+@import "base/logos";
+@import "base/maps";
 @import "base/mixin";
+@import "base/paleta";
+@import "base/query";
+@import "base/variables";
+@import "components/body";
+@import "components/categorias";
+@import "components/footer";
+@import "components/grilla-contratistas";
+@import "components/header";
+@import "components/pag-profesionales";
+
 
 .lista1{
     display: grid;
@@ -54,4 +58,3 @@
 }
 
     
-@import "base/query";
