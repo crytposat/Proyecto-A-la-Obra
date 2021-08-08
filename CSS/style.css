@@ -3,31 +3,92 @@
   margin: 0px;
   padding: 0px; }
 
+.link, footer {
+  display: flex;
+  align-items: center; }
+
 .contratista {
   width: 5em;
   border-radius: 25%; }
 
 /* Colores del background*/
-@font-face {
-  font-family: "rubik";
-  src: url(../Fuente/Rubik/static/Rubik-Bold.ttf) format(woff); }
+/* Colores del background*/
+/* Celular */
+@media only screen and (max-width: 640px) {
+  body {
+    background-color: #f2dac3;
+    width: auto; }
+  h1 {
+    font-size: small; }
+  .logo {
+    width: 60px;
+    height: 40px; }
+  .matrizContainer {
+    grid-template-columns: 1fr; }
+  .lista1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "albanil . carpintero" ". cerrajero ." "electricista . gasista" ". pintor ." "plomero . .";
+    grid-row-gap: 10px; } }
 
-header nav div .logo {
-  width: 160px;
-  height: 96px; }
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body {
+    background-color: #c8c2bc;
+    width: auto; }
+  .matrizContainer {
+    grid-template-columns: 1fr; }
+  h1 {
+    font-size: large; }
+  .logo {
+    width: 96px;
+    height: 60px; }
+  .lista1 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "albanil . carpintero . cerrajero" ". electricista . gasista ." "pintor . plomero . .";
+    grid-row-gap: 10px; } }
 
-h1 {
-  color: #ddcdbe;
+/* Colores del background*/
+.link, footer {
+  display: flex;
+  align-items: center; }
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #c8c2bc; }
+  body .row {
+    margin: 0; }
+
+.link, footer {
+  display: flex;
+  align-items: center; }
+
+.link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
   font-weight: bold;
-  font-family: "rubik";
   text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 5px;
-  text-decoration: overline underline;
-  border: none;
-  margin: 1rem;
-  padding: 1rem; }
+  margin: 0; }
+
+/* Colores del background*/
+.link, footer {
+  display: flex;
+  align-items: center; }
+
+footer {
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #242122;
+  padding: 1rem;
+  margin: 0; }
+  footer footer-images {
+    width: 60%;
+    max-height: 1rem; }
+    footer footer-images partners {
+      height: 0.5rem; }
 
 /* Colores del background*/
 .descripcion {
@@ -57,26 +118,26 @@ h1 {
   .link-container:hover {
     transform: scale(1.5); }
 
-/* Colores del background*/
-footer, .link {
-  display: flex;
-  align-items: center; }
+@font-face {
+  font-family: "rubik";
+  src: url(../Fuente/Rubik/static/Rubik-Bold.ttf) format(woff); }
 
-footer {
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #242122;
+header nav div .logo {
+  width: 160px;
+  height: 96px; }
+
+h1 {
+  color: #ddcdbe;
+  font-weight: bold;
+  font-family: "rubik";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-decoration: overline underline;
+  border: none;
+  margin: 1rem;
   padding: 1rem; }
-  footer footer-images {
-    width: 60%;
-    max-height: 10px; }
-    footer footer-images partners {
-      width: 60%;
-      max-height: 1rem; }
-
-footer, .link {
-  display: flex;
-  align-items: center; }
 
 .matrizContainer {
   display: grid;
@@ -115,21 +176,12 @@ footer, .link {
   text-align: right; }
 
 .Estilo1 {
-  background-color: #f1ca89; }
+  background-color: #f1ca89;
+  margin: 0; }
 
 .Estilo2 {
-  background-color: #f2dac3; }
-
-footer, .link {
-  display: flex;
-  align-items: center; }
-
-.link {
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-weight: bold;
-  text-align: center; }
+  background-color: #f2dac3;
+  margin: 0; }
 
 .lista1 {
   display: grid;
@@ -170,40 +222,3 @@ footer, .link {
   font-weight: normal;
   text-align: center;
   background-color: #f1ca89; }
-
-/* Colores del background*/
-/* Celular */
-@media only screen and (max-width: 640px) {
-  body {
-    background-color: #f2dac3;
-    width: auto; }
-  h1 {
-    font-size: small; }
-  .logo {
-    width: 60px;
-    height: 40px; }
-  .matrizContainer {
-    grid-template-columns: 1fr; }
-  .lista1 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "albanil . carpintero" ". cerrajero ." "electricista . gasista" ". pintor ." "plomero . .";
-    grid-row-gap: 10px; } }
-
-/* Tablet */
-@media only screen and (min-width: 641px) and (max-width: 1024px) {
-  body {
-    background-color: #c8c2bc;
-    width: auto; }
-  .matrizContainer {
-    grid-template-columns: 1fr; }
-  h1 {
-    font-size: large; }
-  .logo {
-    width: 96px;
-    height: 60px; }
-  .lista1 {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "albanil . carpintero . cerrajero" ". electricista . gasista ." "pintor . plomero . .";
-    grid-row-gap: 10px; } }

@@ -9,12 +9,11 @@ footer{
     background-color: nth($colores-fondo, 5 );
     padding: 1rem;
     margin: 0;
-    .footer-images{
+    footer-images{
         width: 60%;
-        max-height: 1rem;
-        .partners{
-            width: 60%;
-            max-height: 1rem;
-        }
+        max-height: 1rem; 
+        partners{
+            height: 0.5rem;
+        }  
     }
 }
