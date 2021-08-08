@@ -9,11 +9,15 @@ footer{
     background-color: nth($colores-fondo, 5 );
     padding: 1rem;
     margin: 0;
-    footer-images{
-        width: 60%;
+    .footer-images{
+        @extend %display-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
         max-height: 1rem; 
-        partners{
-            height: 0.5rem;
-        }  
+        .partners{
+            width: auto;
+            max-height: 3rem;
+        }
     }
 }
